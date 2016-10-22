@@ -1,14 +1,14 @@
 package test;
 
 public class Personne {
-String nom;
-String nationalité;
+private String nom;
+private String nationalitÃ©;
 
 
 public Personne(String a, String b) {
 	// TODO Auto-generated constructor stub
 	nom = a ;
-	nationalité = b;
+	nationalitÃ© = b;
 }
-
+// mÃ©thodes manquantes 
 }
