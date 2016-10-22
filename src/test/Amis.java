@@ -22,30 +22,30 @@ public class Amis {
 		nbAmis++;
 		amis[nbAmis] = p;
 		
-		System.out.println("amis: "+p.nom+" a été ajouté dans votre liste");
+		System.out.println("amis: "+p.nom+" a Ã©tÃ© ajoutÃ© dans votre liste");
 	}
 	
 	public void maListeAmis(){
 		System.out.println("----Liste d'amis----");
 		for (int i = 0; i <=nbAmis; i++) {
-			System.out.println("amis "+(i+1)+": "+amis[i].nom + " de '"+amis[i].nationalité+"'");
+			System.out.println("amis "+(i+1)+": "+amis[i].nom + " de '"+amis[i].nationalitÃ©+"'");
 		}
 	}
 	
 	public void amisAlgerien(){
-		System.out.println("----Liste d'amis algérien----");
+		System.out.println("----Liste d'amis algÃ©rien----");
 		for (int i = 0; i <=nbAmis; i++) {
-			if(amis[i].nationalité.equals("algérien")){
-			System.out.println("amis "+(i+1)+": "+amis[i].nom + " de '"+amis[i].nationalité+"'");
+			if(amis[i].nationalitÃ©.equals("algÃ©rien") || amis[i].nationalitÃ©.equals("algerien") || amis[i].nationalitÃ©.equals("algeria") || amis[i].nationalitÃ©.equals("alg") || amis[i].nationalitÃ©.equals("algerie") || amis[i].nationalitÃ©.equals("algerian")){
+			System.out.println("amis "+(i+1)+": "+amis[i].nom + " de '"+amis[i].nationalitÃ©+"'");
 			}
 		}
 	}
 	
 	public void amisEtranger(){
-		System.out.println("----Liste d'amis étranger----");
+		System.out.println("----Liste d'amis Ã©tranger----");
 		for (int i = 0; i <=nbAmis; i++) {
-			if(!amis[i].nationalité.equals("algérien")){
-			System.out.println("amis "+(i+1)+": "+amis[i].nom + " de '"+amis[i].nationalité+"'");
+			if(!amis[i].nationalitÃ©.equals("algÃ©rien") && !amis[i].nationalitÃ©.equals("algerien") && !amis[i].nationalitÃ©.equals("algeria") && !amis[i].nationalitÃ©.equals("alg") && amis[i].nationalitÃ©.equals("algerie") && !amis[i].nationalitÃ©.equals("algerian")){
+			System.out.println("amis "+(i+1)+": "+amis[i].nom + " de '"+amis[i].nationalitÃ©+"'");
 			}
 		}
 	}
