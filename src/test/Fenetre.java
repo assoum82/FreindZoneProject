@@ -78,7 +78,7 @@ public class Fenetre extends JFrame {
 				if(!click){
 					warning.setText("Must Creat a Liste");
 					
-				}else {  Handle h = new Handle();
+				}else {  Handle h = new Handle();//
 				h.a=new Amis(a);
 				h.setVisible(true);
 				setVisible(false);
