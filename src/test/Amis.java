@@ -1,5 +1,5 @@
 package test;
-
+// la conception n'est pas tout a fait correct puisque Ami est une personne est du coup personne a une liste de personnes 
 public class Amis {
 	Personne[] amis;
 	int nbAmis=-1;
